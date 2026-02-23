@@ -4,6 +4,11 @@ import "./index.css";
 export default function KK() {
 
   const videos = [
+    // Previous videos
+    "6lR6ztCgsKQ",
+    "yp3B6HM96mA",
+    "kR5PE1IZKYw",
+    "ref8iYfnRIk",
     "zed0kMpaFTE",
     "sMqHX71j_HU",
     "H0x-wU9X6E8",
@@ -13,13 +18,23 @@ export default function KK() {
     "kyT90BieBTI",
     "pjdf1zi6F8g",
     "_l5El5n8qmg",
-    "dQw4w9WgXcQ", // extra video 1
-    "3JZ_D3ELwOQ", // extra video 2
-    "V-_O7nl0Ii0", // extra video 3
-    "9bZkp7q19f0", // extra video 4
-    "kJQP7kiw5Fk", // extra video 5
-    "zed0kMpaFTE", // Andhamaina Kalala Full HD
-    "sMqHX71j_HU", // Nannaku Prematho Title Song
+    "7hrs7jqIPZM",
+    "CMT2-_vIuxs",
+    "MfO44FUF1L0",
+    "1xH0jVwS1Lc",
+    "xIOG0fLncf4",
+
+    // ==== Newly added videos ====
+    "g44VQxMcFH4",
+    "mPnWRXCwRsE",
+    "4Poic_Mj8WM",
+    "yFZXJODqbcw",
+    "y4_7KVqj1cY",
+    "gZcw3Ka25WY",
+    "OdL3O67C-Bc",
+    "Apj9ISyXr_s",
+    "zyRFufOmeFY",
+    "ViHFSCmv3vA"
   ];
 
   return (
@@ -36,15 +51,16 @@ export default function KK() {
           <div className="video-box" key={index}>
             <iframe
               src={`https://www.youtube.com/embed/${id}`}
-              title="YouTube video"
+              title={`YouTube video ${index + 1}`}
               frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             ></iframe>
           </div>
         ))}
-
       </div>
-       <footer className="footer">
+
+      <footer className="footer">
         <p>© 2026 Paramesh YouTube Channel. All rights reserved.</p>
         <div className="social">
           <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
